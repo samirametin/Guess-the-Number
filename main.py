@@ -17,10 +17,10 @@ while not is_game_over:
     guess = int(input("Make a guess: "))
 
     if number < guess:
-        print("Too high. \nGuess again")
+        print("Too high.")
         number_of_attemps -= 1
     elif number > guess:
-        print("Too low. \nGuess again")
+        print("Too low.")
         number_of_attemps -= 1
     else:
         print("You guessed the number.")
@@ -29,6 +29,8 @@ while not is_game_over:
     if number_of_attemps == 0:
         print("You've run out of guesses, you lose. ")
         is_game_over = True
+    else:
+        print("Guess again. ")
 
 
 
