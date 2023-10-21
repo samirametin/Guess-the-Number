@@ -23,7 +23,7 @@ while not is_game_over:
         print("Too low.")
         number_of_attemps -= 1
     else:
-        print("You guessed the number.")
+        print(f"You guessed the number. The number was {number}")
         is_game_over = True
 
     if number_of_attemps == 0:
